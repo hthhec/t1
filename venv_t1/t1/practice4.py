@@ -76,7 +76,44 @@ color = "red"
 print(f"나는 {age}, {color}색이 좋아.")
 
 #탈출문자
-print("호로 \n 롤")
+print("호로 줄바꿈\n 뿅 ! ")
 print("저는 \"나도코딩\" 입니다")
 print("저는 '나도코딩' 입니다")
 print('저는 나도코딩 입니다')
+
+# \\ : 문장내에서 \
+#print("D:\회사\스터디\python\py6\t1")
+print("D:\\회사\\스터디\\python\\py6\\t1")
+
+# \r : 커서를 맨앞으로 -> ??? 덮어쓰끼까지 하는듯
+print("RED APPLE\rPine")
+
+# \b 백스페이스(한글자삭제)
+print("redd\b apple")
+
+# \t (tab)
+print("red \t ap")
+print("")
+
+#퀴즈
+
+domain = "http://naver.com"
+r1 = domain[7:]
+r2 = r1[:5]
+r3 = len(r2)
+r4 = r2.count("e")
+
+#print("r2[:3]"+"r3"+"r4"+"!")
+print(str(r2[:3])+str(r3)+str(r4)+"!")
+
+#답
+url = "http://naver.com"
+
+my_str = url.replace("http://" , "") #규칙 1
+print(my_str)
+my_str = my_str[:my_str.index(".")] #규칙 2
+print(my_str)
+password = my_str[:3] + str(len(my_str)) + str(my_str.count("e")) + "!"
+print("{0}의 비밀번호는 {1} 입니다. " .format(url, password))
+
+
