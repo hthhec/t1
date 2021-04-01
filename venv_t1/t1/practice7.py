@@ -5,6 +5,9 @@ def open_account():
 
 open_account()
 
+
+# 전달값과 반환값
+
 def deposit(balance, money): #압금
     print("입금이 완료 잔액은 {0}원" .format(balance + money))
     return balance+ money
